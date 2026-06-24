@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>张庆 | 高级 Java 工程师 · AI Agent Developer</title>
+    <meta
+      name="description"
+      content="8年经验高级 Java 工程师，专注企业级系统、AI Agent、Spring AI、LangChain4j、Google ADK、MCP 网关与智能化工程落地。"
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%231a1a1a'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-size='34' fill='%23f5f5f5'%3E%E2%98%AF%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@400;500;700;900&family=ZCOOL+XiaoWei&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=taiji-content-2" />
+  </head>
+  <body>
+    <canvas class="energy-canvas" aria-hidden="true"></canvas>
+    <div class="cursor-ring" aria-hidden="true"></div>
+    <div class="site-shell">
+      <header class="topbar" aria-label="站点导航">
+        <a class="brand" href="#home" aria-label="回到首页">
+          <span class="brand-mark">☯</span>
+          <span>
+            <strong>张庆</strong>
+            <small>Java · Agent · Architect</small>
+          </span>
+        </a>
+        <nav class="topnav">
+          <a href="#about">简介</a>
+          <a href="#capabilities">能力</a>
+          <a href="#projects">项目</a>
+          <a href="#contact">联系</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero" id="home">
+          <div class="hero-art" aria-hidden="true"></div>
+          <div class="hero-grid" aria-hidden="true"></div>
+          <div class="hero-copy">
+            <p class="eyebrow">8 Years / Senior Java Engineer / AI Agent Developer</p>
+            <h1 data-text="把复杂业务系统，升级成会思考的 Agent 工作流。">
+              把复杂业务系统，升级成会思考的 Agent 工作流。
+            </h1>
+            <p class="lead">
+              我专注 Java 后端、企业级平台架构、AI Agent 工程化落地。熟悉 Spring AI、LangChain4j、Google ADK，
+              能把 Codex、Claude、Hermes 等 AI 工具纳入研发链路，让系统从“能跑”进化到“能协作、能理解、能自动化”。
+            </p>
+            <div class="signal-strip" aria-label="门户状态">
+              <span><strong>08</strong> 年企业级研发</span>
+              <span><strong>06</strong> 类核心平台</span>
+              <span><strong>03</strong> Agent 技术栈</span>
+            </div>
+            <div class="hero-actions">
+              <a class="primary-action" href="#projects">查看项目亮点</a>
+              <a class="ghost-action" href="#agent-lab">进入 Agent Lab</a>
+            </div>
+          </div>
+
+          <section class="bagua-panel" id="bagua" aria-label="八卦个人门户">
+            <div class="taiji-orbit" aria-label="八卦导航">
+              <div class="orbit-ring one" aria-hidden="true"></div>
+              <div class="orbit-ring two" aria-hidden="true"></div>
+              <button class="trigram active" data-key="qian" aria-pressed="true" style="--tone: #4a90e2">
+                <span>☰</span><em>乾</em>
+              </button>
+              <button class="trigram" data-key="dui" aria-pressed="false" style="--tone: #bd10e0">
+                <span>☱</span><em>兑</em>
+              </button>
+              <button class="trigram" data-key="li" aria-pressed="false" style="--tone: #ff6b6b">
+                <span>☲</span><em>离</em>
+              </button>
+              <button class="trigram" data-key="zhen" aria-pressed="false" style="--tone: #f5a623">
+                <span>☳</span><em>震</em>
+              </button>
+              <button class="trigram" data-key="xun" aria-pressed="false" style="--tone: #7ed321">
+                <span>☴</span><em>巽</em>
+              </button>
+              <button class="trigram" data-key="kan" aria-pressed="false" style="--tone: #50e3c2">
+                <span>☵</span><em>坎</em>
+              </button>
+              <button class="trigram" data-key="gen" aria-pressed="false" style="--tone: #9013fe">
+                <span>☶</span><em>艮</em>
+              </button>
+              <button class="trigram" data-key="kun" aria-pressed="false" style="--tone: #8b7d6b">
+                <span>☷</span><em>坤</em>
+              </button>
+              <div class="taiji-core">
+                <span class="yin-dot"></span>
+                <span class="yang-dot"></span>
+              </div>
+            </div>
+
+            <article class="reading-card" aria-live="polite">
+              <div class="reading-beam" aria-hidden="true"></div>
+              <p class="reading-kicker">当前卦象</p>
+              <h2 id="reading-title">乾 · Java 架构</h2>
+              <p id="reading-body">
+                乾为天，代表系统视野。这里对应 Java 后端、分布式服务、企业级平台架构与稳定交付能力。
+              </p>
+              <div class="reading-meta">
+                <span id="reading-scene">高级 Java 工程能力</span>
+                <a id="reading-link" href="#capabilities">前往查看</a>
+              </div>
+            </article>
+          </section>
+        </section>
+
+        <section class="section about-section" id="about">
+          <div class="section-heading">
+            <span>☷ 坤</span>
+            <h2>工程根基</h2>
+          </div>
+          <div class="about-grid">
+            <div>
+              <p>
+                我是张庆，8 年经验高级 Java 工程师，长期参与营销、分销、数据中台、报表等企业级系统建设。
+                我关注业务边界、系统稳定性、可维护性与交付质量，也关注 AI 如何真实进入企业研发和业务流程。
+              </p>
+              <p>
+                对业务，我关注场景、边界与收益；对系统，我关注可维护、可演进、可观测；对 AI，
+                我关注可控、可解释、可集成。这也是我把太极八卦作为信息架构的原因：复杂系统需要平衡，也需要突破。
+              </p>
+            </div>
+            <ol class="timeline">
+              <li><time>现在</time><span>聚焦 AI Agent 工程化、MCP 工具生态与企业智能化应用落地</span></li>
+              <li><time>近年</time><span>建设综合营销、分销、数据中台、报表等核心业务平台</span></li>
+              <li><time>长期</time><span>深耕 Java 后端、复杂业务建模、性能优化和稳定性治理</span></li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="section blog-section" id="capabilities">
+          <div class="section-heading">
+            <span>☰ 乾 · ☵ 坎 · ☶ 艮</span>
+            <h2>能力矩阵</h2>
+          </div>
+          <div class="article-grid">
+            <article class="article-card qian tilt-card">
+              <span>☰ 乾</span>
+              <h3>高级 Java 工程能力</h3>
+              <p>面向复杂业务域进行服务拆分、接口设计、事务一致性、性能优化、缓存策略、异步任务、权限模型与稳定性治理。</p>
+            </article>
+            <article class="article-card kan tilt-card">
+              <span>☵ 坎</span>
+              <h3>AI Agent 工程化</h3>
+              <p>基于 Spring AI、LangChain4j、Google ADK 构建工具调用、记忆、规划、多轮对话、结构化输出与可控执行链路。</p>
+            </article>
+            <article class="article-card gen tilt-card">
+              <span>☶ 艮</span>
+              <h3>MCP 与工具生态</h3>
+              <p>设计 AI-MCP 网关，将 HTTP API 转换为 MCP 服务，让企业已有系统无需重构即可成为 Agent 可调用工具。</p>
+            </article>
+            <article class="article-card li tilt-card">
+              <span>☲ 离</span>
+              <h3>AI 辅助研发</h3>
+              <p>熟练使用 Codex、Claude、Hermes 进行需求澄清、代码生成、重构、测试补全、文档沉淀和技术方案推演。</p>
+            </article>
+            <article class="article-card zhen tilt-card">
+              <span>☳ 震</span>
+              <h3>业务平台落地</h3>
+              <p>能把营销、分销、报表、数据平台等复杂需求拆解为可交付、可维护、可演进的系统能力。</p>
+            </article>
+            <article class="article-card xun tilt-card">
+              <span>☴ 巽</span>
+              <h3>协作与推进</h3>
+              <p>在需求、研发、测试、运营之间建立清晰表达和反馈链路，让技术方案真正对业务产生作用。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section project-section" id="projects">
+          <div class="section-heading">
+            <span>☳ 震</span>
+            <h2>项目作品</h2>
+          </div>
+          <div class="project-grid">
+            <article class="project-card tilt-card">
+              <div class="project-index">A01</div>
+              <h3>综合营销系统</h3>
+              <p>覆盖活动配置、优惠规则、用户触达、投放策略、效果追踪，让营销动作可配置、可复盘、可持续迭代。</p>
+            </article>
+            <article class="project-card tilt-card">
+              <div class="project-index">A02</div>
+              <h3>分销系统</h3>
+              <p>支撑渠道层级、佣金结算、订单归因、分润规则与风控校验，帮助业务快速搭建可扩张的销售网络。</p>
+            </article>
+            <article class="project-card tilt-card">
+              <div class="project-index">A03</div>
+              <h3>数据中台与报表系统</h3>
+              <p>沉淀统一指标、数据模型、报表权限与查询服务，让业务从“找数据”变成“用数据决策”。</p>
+            </article>
+            <article class="project-card tilt-card">
+              <div class="project-index">AI1</div>
+              <h3>AI 多模态聊天</h3>
+              <p>自动识别文字、图片并生成上下文相关回复，将用户输入解析、模型调用、安全边界和业务工具接入统一编排。</p>
+            </article>
+            <article class="project-card tilt-card">
+              <div class="project-index">AI2</div>
+              <h3>AI 流程图助手</h3>
+              <p>根据自然语言生成流程图、UML、时序图等，并支持二次编辑，让需求沟通从长文档变成可视化协作。</p>
+            </article>
+            <article class="project-card tilt-card">
+              <div class="project-index">AI3</div>
+              <h3>AI-MCP 网关</h3>
+              <p>把企业 HTTP 服务包装为 MCP 工具，配置即用，让存量系统无需额外改造即可接入 AI Agent 生态。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section lab-section" id="agent-lab">
+          <div class="section-heading">
+            <span>☵ 坎 · ☲ 离</span>
+            <h2>Agent Lab</h2>
+          </div>
+          <div class="lab-grid">
+            <div class="lab-console">
+              <div class="console-head">
+                <span></span><span></span><span></span>
+                <strong>skill-runtime.yml</strong>
+              </div>
+              <pre><code>engineer:
+  role: Senior Java Engineer
+  years: 8
+  architecture:
+    - distributed services
+    - data platform
+    - reporting engine
+    - marketing domain
+  ai_agent:
+    - Spring AI
+    - LangChain4j
+    - Google ADK
+    - MCP gateway
+  workflow_tools:
+    - Codex
+    - Claude
+    - Hermes</code></pre>
+            </div>
+            <article class="lab-output">
+              <p class="reading-kicker">Agent 架构思路</p>
+              <h3>不是“会用 AI”，而是能把 AI 放进企业系统。</h3>
+              <p>
+                我关注工具调用、任务规划、记忆上下文、权限边界、参数校验、限流审计和失败回退。
+                目标不是做一个会聊天的 Demo，而是让 Agent 可以可靠地进入真实业务流程。
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section contact-section" id="contact">
+          <div class="section-heading">
+            <span>☴ 巽 · ☱ 兑</span>
+            <h2>联系我</h2>
+          </div>
+          <div class="contact-band">
+            <p>适合岗位：高级 Java 工程师、AI Agent 开发工程师、Java 架构师、企业 AI 应用研发、MCP/工具平台研发。</p>
+            <div class="contact-links">
+              <a href="mailto:itqzing@163.com">itqzing@163.com</a>
+              <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="#home">回到卦盘</a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js?v=taiji-content-2"></script>
+  </body>
+</html>
