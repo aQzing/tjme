@@ -37,6 +37,8 @@
           <a href="#about">简介</a>
           <a href="#capabilities">能力</a>
           <a href="#projects">项目</a>
+          <a href="#notes">手记</a>
+          <a href="#avatar">分身</a>
           <a href="#contact">联系</a>
         </nav>
       </header>
@@ -182,37 +184,92 @@
             <span>☳ 震</span>
             <h2>项目作品</h2>
           </div>
-          <div class="project-grid">
-            <article class="project-card tilt-card">
+          <p class="section-hint">点击任意项目卡片 → 打开生产档案终端，查看真实的架构决策与踩坑记录。</p>
+          <div class="project-grid" id="project-grid">
+            <article class="project-card tilt-card" data-project="A01">
               <div class="project-index">A01</div>
               <h3>综合营销系统</h3>
               <p>覆盖活动配置、优惠规则、用户触达、投放策略、效果追踪，让营销动作可配置、可复盘、可持续迭代。</p>
+              <span class="project-open">>_ 打开终端</span>
             </article>
-            <article class="project-card tilt-card">
+            <article class="project-card tilt-card" data-project="A02">
               <div class="project-index">A02</div>
               <h3>分销系统</h3>
               <p>支撑渠道层级、佣金结算、订单归因、分润规则与风控校验，帮助业务快速搭建可扩张的销售网络。</p>
+              <span class="project-open">>_ 打开终端</span>
             </article>
-            <article class="project-card tilt-card">
+            <article class="project-card tilt-card" data-project="A03">
               <div class="project-index">A03</div>
               <h3>数据中台与报表系统</h3>
               <p>沉淀统一指标、数据模型、报表权限与查询服务，让业务从“找数据”变成“用数据决策”。</p>
+              <span class="project-open">>_ 打开终端</span>
             </article>
-            <article class="project-card tilt-card">
+            <article class="project-card tilt-card" data-project="AI1">
               <div class="project-index">AI1</div>
               <h3>AI 多模态聊天</h3>
               <p>自动识别文字、图片并生成上下文相关回复，将用户输入解析、模型调用、安全边界和业务工具接入统一编排。</p>
+              <span class="project-open">>_ 打开终端</span>
             </article>
-            <article class="project-card tilt-card">
+            <article class="project-card tilt-card" data-project="AI2">
               <div class="project-index">AI2</div>
               <h3>AI 流程图助手</h3>
               <p>根据自然语言生成流程图、UML、时序图等，并支持二次编辑，让需求沟通从长文档变成可视化协作。</p>
+              <span class="project-open">>_ 打开终端</span>
             </article>
-            <article class="project-card tilt-card">
+            <article class="project-card tilt-card" data-project="AI3">
               <div class="project-index">AI3</div>
               <h3>AI-MCP 网关</h3>
               <p>把企业 HTTP 服务包装为 MCP 工具，配置即用，让存量系统无需额外改造即可接入 AI Agent 生态。</p>
+              <span class="project-open">>_ 打开终端</span>
             </article>
+          </div>
+
+          <!-- 项目解剖台：仿终端弹层 -->
+          <div class="terminal-modal" id="terminal-modal" hidden>
+            <div class="terminal-backdrop" data-terminal-close></div>
+            <div class="terminal-window" role="dialog" aria-modal="true" aria-label="项目生产档案终端">
+              <div class="terminal-head">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                <strong id="terminal-title">terminal</strong>
+                <button class="terminal-close" data-terminal-close aria-label="关闭终端">×</button>
+              </div>
+              <div class="terminal-body" id="terminal-body" aria-live="polite"></div>
+              <div class="terminal-input-row">
+                <span class="terminal-prompt">visitor@tjme:~$</span>
+                <input id="terminal-input" type="text" autocomplete="off" spellcheck="false" placeholder="输入 help 查看可用命令" aria-label="终端命令输入" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section notes-section" id="notes">
+          <div class="section-heading">
+            <span>☱ 兑</span>
+            <h2>实战手记</h2>
+          </div>
+          <p class="section-hint">AI 落地与生产事故的复盘记录——翻车不可怕，复盘才是资产。</p>
+          <div class="notes-grid" id="notes-grid"></div>
+        </section>
+
+        <section class="section avatar-section" id="avatar">
+          <div class="section-heading">
+            <span>☵ 坎 · ☲ 离</span>
+            <h2>问我的分身</h2>
+          </div>
+          <p class="section-hint">一个架在简历站上的 Agent——这段对话本身，就是张庆 Agent 能力的 Demo。</p>
+          <div class="avatar-shell">
+            <div class="avatar-gua" aria-hidden="true">
+              <span class="gua-ring">☯</span>
+              <em id="avatar-status">分身在线</em>
+            </div>
+            <div class="avatar-chat">
+              <div class="avatar-messages" id="avatar-messages" aria-live="polite"></div>
+              <div class="avatar-chips" id="avatar-chips" aria-label="快捷提问"></div>
+              <div class="avatar-input-row">
+                <input id="avatar-input" type="text" autocomplete="off" placeholder="问问我的分身：项目经历 / Java 功底 / Agent 经验 / 踩坑" aria-label="向分身提问" />
+                <button id="avatar-send" type="button">发送</button>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -273,6 +330,8 @@
       </main>
     </div>
 
-    <script src="script.js?v=taiji-content-2"></script>
+    <script src="data.js?v=v2-1"></script>
+    <script src="features.js?v=v2-1"></script>
+    <script src="script.js?v=v2-1"></script>
   </body>
 </html>
